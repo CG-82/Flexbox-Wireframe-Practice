@@ -1,35 +1,81 @@
 @import url("./reset.css");
 
-body {background-color: rgb(199, 197, 197);}
-
-header,main,article,aside,footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {background-color: rgb(199, 197, 197);
+    
     
 
 }
 
-header {
-    background-color: rgb(138, 59, 148);
+
+
+header,main,article,aside,footer {
+    
+    box-sizing: border-box;
+    max-width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
     color:white;
+    
+    
+}
+
+header {
+    
+    background-color: rgb(138, 59, 148);
+
+    
 }
 
 main {
+    
     background-color: rgb(118, 179, 118);
+    
 }
 
 article {
+    
     background-color: rgb(199, 60, 95);
-    color:white;
+    
+    
+    
 }
 
 aside {
+    
     background-color: rgb(22, 99, 177);
-    color: white;
+    
 }
 
 footer {
+    
     background-color: chocolate;
-    color:white;
+    
+}
+
+.flex1 {
+
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+   
+    
+    
+    
+}
+
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+
 }
