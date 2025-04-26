@@ -3,6 +3,8 @@
 body {background-color: rgb(199, 197, 197);
     
     
+    
+    
 
 }
 
@@ -17,6 +19,12 @@ header,main,article,aside,footer {
     padding: 1rem;
     border-radius: 10px;
     color:white;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
     
     
 }
@@ -24,6 +32,9 @@ header,main,article,aside,footer {
 header {
     
     background-color: rgb(138, 59, 148);
+    
+    
+    
 
     
 }
@@ -31,6 +42,7 @@ header {
 main {
     
     background-color: rgb(118, 179, 118);
+    
     
 }
 
@@ -46,11 +58,13 @@ aside {
     
     background-color: rgb(22, 99, 177);
     
+    
 }
 
 footer {
     
     background-color: chocolate;
+    
     
 }
 
@@ -58,9 +72,9 @@ footer {
 
     display: flex;
     flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
+    
+    
+    
    
     
     
@@ -78,4 +92,52 @@ footer {
     
     
 
+}
+
+@media only screen and (min-width: 992px){
+
+.flex2 {
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+}
+ 
+header {
+    order:1;
+    width: 100%;
+}
+
+aside {
+    order:2;
+    width: 25%;
+    height: 350px;
+    justify-content: center;
+    
+    
+}
+    
+    
+
+main {
+    order: 3;
+    width: 50%;
+    height: 350px;
+    
+   
+}
+
+footer {
+    order: 4;
+    width: 100%;
+}
+
+.article {
+   max-width: 70%;
+   justify-content: center;
+   align-items: center;
+   margin-left:50px;
+   margin-right:50px;
+   gap: 50px
+}
 }
